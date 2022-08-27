@@ -1,0 +1,44 @@
+body{
+    background-image: url("https://imgs.search.brave.com/2eeCwpqMqlxtJOnm-j003jnTT0dE7gyxmu91jxoWwDE/rs:fit:1200:1066:1/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2ZmLzVh/L2E5L2ZmNWFhOWYw/Mzg3ZjcwYTZiZjcx/MGNhZWI0NWVlNjk5/LmpwZw");
+    background-repeat: no-repeat;
+    background-size:   cover;
+    padding: 50px;
+    
+  }
+em{
+color: red;
+}
+
+.form-box {
+    position: relative;
+    /* top: 80px; */
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    background: #fffbfb;
+    border: 10px solid #f2f2f2;
+    border-radius: 30px;
+}
+
+h1, p {
+    text-align: center;
+}
+
+input, textarea {
+    width: 100%;
+
+}
+
+input[type="radio"]{
+    margin-right: 5px;
+    width:auto;
+}
+
+.form-group textarea{
+    height: 90px;
+
+}
+button b{
+    text-decoration: none;
+    color: blue;
+}
