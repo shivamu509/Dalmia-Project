@@ -4,11 +4,14 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = process.env.PORT || 3000;
 const arr = []
+const allowList = []
+const denyList = []
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({
     extended: true
 }))
 app.set('view engine', 'ejs');
+
 
 app.get('/',(req,res)=>{
     res.render("form")
@@ -16,6 +19,15 @@ app.get('/',(req,res)=>{
 app.get('/login',(req,res)=>{
     res.render("login")
 })
+app.get('/admin/:location',(req,res)=>{
+    if(req.params.location){
+        console.log(req.params.location);
+    }else{
+        console.log("Something went wrong")
+    }
+    res.render("list",{items: arr, render: "home"})
+})
+
 
 app.post('/file',(req,res)=>{
     res.send("<img src='https://imgs.search.brave.com/HqKAfs7t3LanOBBdU76cjobZpTpPXSvBRwklpK6KFS8/rs:fit:1200:805:1/g:ce/aHR0cDovL3JlbmV3/aGg1ODEud2VlYmx5/LmNvbS91cGxvYWRz/LzEvMi81LzMvMTI1/Mzk1NjYxLzcyMjgx/NTc4Ni5qcGc'></img>")
@@ -42,10 +54,12 @@ app.post("/",(req,res)=>{
 app.post('/login',(req,res)=>{
     console.log(req.body);
     if(req.body.email=='user1@gmail.com' && req.body.password=='12345'){
-        res.render("list",{items: arr}) 
+         res.redirect('/admin/home');
     }else{
         res.send('Invalid Username or Password')
     }
+})
+app.post('/move',(req,res)=>{
 })
 
 app.listen(port,(err)=>{

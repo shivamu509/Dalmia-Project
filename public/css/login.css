@@ -11,7 +11,7 @@ body {
   padding-top: 10%;
   padding-bottom: 40px;
 
-}
+} 
 .navbar {
   padding-top: 3px;
   padding-bottom: 3px;
@@ -27,7 +27,6 @@ body {
 .navbar-nav li a:hover {
   color: #64afa0 !important;
 }
-
 .form-signin {
   width: 100%;
   max-width: 330px;
