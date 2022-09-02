@@ -16,8 +16,8 @@
 ### Imp Points
 
 1. Website run in "localhost:3000" this is the root page, here you can see a form which user can fill and submit 
-2. "localhost:3000/login" will open up a login form 
-    email :- admin1@mail.com
+2. "localhost:3000/login" will open up a login form <br>
+    email :- admin1@mail.com<br>
     password:- admin123
 3. After successfull login you can see home page which will be initially empty when you run without any submission 
 4. Page get's refresh after every 20 second
