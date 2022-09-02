@@ -147,7 +147,7 @@ const itemsSchema = new mongoose.Schema({
     dropPlace: String,
     description: String,
     noOfPerson: Number,
-    date: Date,
+    date: String,
     time: String,
     requestioningEmployee: String
 })
@@ -209,7 +209,7 @@ app.post("/",(req,res)=>{
     res.render("success")
 })
 app.post('/login',(req,res)=>{
-    if(req.body.email=='user1@gmail.com' && req.body.password=='12345'){
+    if(req.body.email=='admin1@mail.com' && req.body.password=='admin123'){
          res.redirect('/admin/home');
     }else{
         res.send('Invalid Username or Password')
