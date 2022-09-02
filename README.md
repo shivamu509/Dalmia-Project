@@ -12,11 +12,11 @@
 5. If you have any other ide open up project on that ide, open command prompt or hyper terminal and change directory to current location of your file
 6. type "npm i" inside terminal and press enter (it will take some time to complete as it installing all required dependency in backend)
 7. Again type "node index.js" to run the website (after some time it will show a message "server running on https:localhost:3000" 
-8. If it shows any error then go to index.js file
-    a. comment all uncommented line
+8. If it shows any error then go to index.js file<br>
+    a. comment all uncommented line<br>
     b. uncomment line 4
-9. After that go to list.ejs file
-    a. comment line 39 which has value "<%= item.id %>"
+9. After that go to list.ejs file<br>
+    a. comment line 39 which has value "<%= item.id %>"<br>
     b. uncomment line 40 which has value <%= item.employeeNumber %>
 10. Now press ctrl + c to exit from error line and again type "node index.js" not it should work fine
 
