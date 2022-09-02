@@ -1,7 +1,7 @@
 # Dalmia-Project
 #### A vehicle request and approval website for Dalmia Bharat Refactories Limited
 
-## This is the demo code of that main website 
+## This is the demo code of main website 
 
 ### To run this website in your pc 
 
