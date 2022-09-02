@@ -1,9 +1,18 @@
 <%- include('header') %> 
-<!-- <meta http-equiv="refresh" content="240"> -->
+<meta http-equiv="refresh" content="20">
 <link rel="stylesheet" href="/css/login.css">
 </head>
 <body>
     <%- include('navbar') %> 
+    <% if (render=="home"){ %>
+        <h2 class="mt-3" style="font-family: 'Maven Pro', sans-serif; color: aliceblue;">Home</h2> 
+    <% } else if (render == "allow") {%>
+        <h2 class="mt-3" style="font-family: 'Maven Pro', sans-serif; color: aliceblue;">Allowed</h2> 
+    <% }else if (render == "deny"){ %> 
+        <h2 class="mt-3" style="font-family: 'Maven Pro', sans-serif; color: aliceblue;">Denied</h2> 
+    <% }else {%> 
+        <h2 class="mt-3">Error 404 Not Found</h2>
+    <% } %> 
     <% if(items.length==0){%>
         <%- include('empty') %> 
     <%}else{ %>
@@ -26,16 +35,19 @@
                             <h6 class="card-subtitle mb-2 text-muted"><%= item.file %></h6>
 
                             <form action="/move" method="post" class="mt-3">
+                                <input type="hidden" name="from" value="<%= render %>">
+                                <input type="hidden" name="id" value="<%= item._id %>">
+                                <!-- <input type="hidden" name="id" value="<%= item.employeeNumber %>"> -->
                             <% if(render=="home"){ %>
-                                    <button type="button" class="btn btn-success mx-3" name="allow" value="<%= item._id %> ">Allow</button>
-                                    <button type="button" class="btn btn-danger mx-3" name="deny" value="<%= item._id %>">Deny</button>    
+                                    <button type="submit" class="btn btn-success mx-3" name="to" value="allow">Allow</button>
+                                    <button type="submit" class="btn btn-danger mx-3" name="to" value="deny">Deny</button>    
                             <% }else{ %>                                
                                 <% if(render=="deny"){ %>
-                                    <button type="button" class="btn btn-success mx-3" name="allow" value="<%= item._id %> ">Allow</button>
+                                    <button type="submit" class="btn btn-success mx-3" name="to" value="allow">Allow</button>
                                 <% }else{ %> 
-                                    <button type="button" class="btn btn-danger mx-3" name="deny" value="<%= item._id %>">Deny</button>
+                                    <button type="submit" class="btn btn-danger mx-3" name="to" value="deny">Deny</button>
                                 <% } %> 
-                                    <button type="button" class="btn btn-danger mx-3" name="delete" value="<%= item._id %>">Delete</button>
+                                    <button type="submit" class="btn btn-danger mx-3" name="to" value="delete">Delete</button>
                             <% } %> 
                             </form>
                         </div>

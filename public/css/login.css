@@ -27,6 +27,9 @@ body {
 .navbar-nav li a:hover {
   color: #64afa0 !important;
 }
+
+a:active { font-weight: bold; color: black;}
+
 .form-signin {
   width: 100%;
   max-width: 330px;
@@ -60,4 +63,5 @@ body {
 .social-icon {
     margin: 20px 10px;
   }
+
 
