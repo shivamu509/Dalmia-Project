@@ -6,11 +6,11 @@
 ### To run this website in your pc 
 
 1. Click on code button above and download zip
-2. Extract zip 
+2. Extract zip in your desired location
 3. Install any ide's (like vsCode), nodejs, mongoose and mongosh in your pc
-4. open project in vscode and then open terminal of vs code
-5. If you have any other ide open command prompt or hyper terminal and change directory to current location of your file
-6. type "npm i" inside terminal to install all dependecy
+4. If using vscode open project in vscode and then open terminal of vs code
+5. If you have any other ide open up project on that ide, open command prompt or hyper terminal and change directory to current location of your file
+6. type "npm i" inside terminal to install all dependency
 7. again type "node index.js" to run the website
 
 ### Imp Points
