@@ -10,13 +10,20 @@
 3. Install any ide's (like vsCode), nodejs, mongoose, mongosh and hyper terminal(optional) in your pc 
 4. If using vscode open project in vscode and then open terminal of vs code
 5. If you have any other ide open up project on that ide, open command prompt or hyper terminal and change directory to current location of your file
-6. type "npm i" inside terminal to install all dependency
-7. again type "node index.js" to run the website
+6. type "npm i" inside terminal and press enter (it will take some time to complete as it installing all required dependency in backend)
+7. Again type "node index.js" to run the website (after some time it will show a message "server running on https:localhost:3000" 
+8. If it shows any error then go to index.js file
+    a. comment all uncommented line
+    b. uncomment line 4
+9. After that go to list.ejs file
+    a. comment line 39 which has value "<%= item.id %>"
+    b. uncomment line 40 which has value <%= item.employeeNumber %>
+10. Now press ctrl + c to exit from error line and again type "node index.js" not it should work fine
 
 ### Imp Points
 
-1. Website run in "localhost:3000" this is the root page, here you can see a form which user can fill and submit 
-2. "localhost:3000/login" will open up a login form <br>
+1. Website run in url "http://localhost:3000" this is the root page, here you can see a form which user can fill and submit
+2. "http://localhost:3000/login" will open up a login form <br>
     email :- admin1@mail.com<br>
     password:- admin123
 3. After successfull login you can see home page which will be initially empty when you run without any submission 
@@ -30,7 +37,9 @@
 ![image](https://user-images.githubusercontent.com/83783169/188070032-13d53620-edad-4063-8550-a01507a38255.png)
 ![image](https://user-images.githubusercontent.com/83783169/188070074-2ff57fa1-5685-4e23-9ba9-c56af683caae.png)
 
+![image](https://user-images.githubusercontent.com/83783169/188082552-ddfd53e1-0ef8-42fe-8f9f-8e53f038218d.png)
 ![image](https://user-images.githubusercontent.com/83783169/188069268-9d9a3a93-f5ae-40bb-9500-1e57a390ce4f.png)
+
 ![image](https://user-images.githubusercontent.com/83783169/188070195-f05d4258-3612-4b29-987e-53621d6eeed0.png)
 
 ![image](https://user-images.githubusercontent.com/83783169/188069438-a3047318-50d3-4271-a8dd-a643971ae4f7.png)
