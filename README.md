@@ -27,3 +27,13 @@
     allow:- all allowed request can be seen here (admin can either deny or delete a perticular request)
     deny:- all denied request can be seen here (admin can either allow or delete a perticular request)
     
+![image](https://user-images.githubusercontent.com/83783169/188070032-13d53620-edad-4063-8550-a01507a38255.png)
+![image](https://user-images.githubusercontent.com/83783169/188070074-2ff57fa1-5685-4e23-9ba9-c56af683caae.png)
+
+![image](https://user-images.githubusercontent.com/83783169/188069268-9d9a3a93-f5ae-40bb-9500-1e57a390ce4f.png)
+![image](https://user-images.githubusercontent.com/83783169/188070195-f05d4258-3612-4b29-987e-53621d6eeed0.png)
+
+![image](https://user-images.githubusercontent.com/83783169/188069438-a3047318-50d3-4271-a8dd-a643971ae4f7.png)
+![image](https://user-images.githubusercontent.com/83783169/188069218-3396e2de-e8a6-4cf7-a9e2-06b8af0128ca.png)
+![image](https://user-images.githubusercontent.com/83783169/188069329-91f99518-cfac-4ece-af0f-8cbb2a13a1a2.png)
+![image](https://user-images.githubusercontent.com/83783169/188069375-a7acd900-e518-40d3-ab7c-3d6e30cf15cb.png)
