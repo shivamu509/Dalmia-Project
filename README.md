@@ -34,6 +34,8 @@
     allow:- all allowed request can be seen here (admin can either deny or delete a perticular request)
     deny:- all denied request can be seen here (admin can either allow or delete a perticular request)
     
+### Below are the images for of website
+    
 ![image](https://user-images.githubusercontent.com/83783169/188070032-13d53620-edad-4063-8550-a01507a38255.png)
 ![image](https://user-images.githubusercontent.com/83783169/188070074-2ff57fa1-5685-4e23-9ba9-c56af683caae.png)
 
